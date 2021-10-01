@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="202.0" prefWidth="600.0" style="-fx-background-color: #2E86C1;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label fx:id="songLabel" alignment="CENTER" layoutX="78.0" layoutY="14.0" prefHeight="90.0" prefWidth="444.0" style="-fx-background-color: #000000;" text="MP3 Music" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <ProgressBar fx:id="songProgressBar" layoutY="119.0" prefHeight="18.0" prefWidth="600.0" progress="0.0" />
+        <Button fx:id="repeatButton" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#repeatMedia" prefHeight="35.0" prefWidth="60.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/repeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+        <Button fx:id="pauseButton" layoutX="188.0" layoutY="150.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="35.0" prefWidth="60.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/pause.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+        <Button fx:id="stopButton" layoutX="279.0" layoutY="150.0" mnemonicParsing="false" onAction="#stopMedia" prefHeight="35.0" prefWidth="60.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/stop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+        <Button fx:id="volumeUpButton" layoutX="447.0" layoutY="150.0" mnemonicParsing="false" onAction="#volumeUpMedia" prefHeight="35.0" prefWidth="60.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/hautParleur.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+        <Button fx:id="volumeDownButton" layoutX="362.0" layoutY="150.0" mnemonicParsing="false" onAction="#volumeDownMedia" prefHeight="35.0" prefWidth="60.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/hautParleur-.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+        <Button fx:id="muteButton" layoutX="529.0" layoutY="150.0" mnemonicParsing="false" onAction="#muteMedia" prefHeight="35.0" prefWidth="60.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/mute.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+        <Button fx:id="chooseFileButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#chooseFileMedia" prefHeight="35.0" prefWidth="35.0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/icone.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <Button fx:id="closeButton" layoutX="544.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeMedia" prefHeight="35.0" prefWidth="35.0" text="X">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="playButton1" layoutX="100.0" layoutY="150.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="35.0" prefWidth="60.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/play.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="repeatStateLabel" layoutX="74.0" layoutY="166.0" prefHeight="18.0" prefWidth="26.0" />
+    </children>
+</AnchorPane>
